@@ -1,13 +1,19 @@
 "use client";
 
 import * as React from "react";
-import { Toast } from "@/components/ui/toast";
+import { Toast, ToastActionElement } from "@/components/ui/toast";
 
-type ToasterToast = Toast & {
-  id: string;
+// Define Toast without circular reference
+type Toast = {
   title?: React.ReactNode;
   description?: React.ReactNode;
   action?: ToastActionElement;
+};
+
+type ToasterToast = Toast & {
+  id: string;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
 };
 
 const actionTypes = {
@@ -130,8 +136,6 @@ function dispatch(action: Action) {
     listener(memoryState);
   });
 }
-
-type Toast = Omit<ToasterToast, "id">;
 
 function toast({ ...props }: Toast) {
   const id = generateId();
