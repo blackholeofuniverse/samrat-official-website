@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Samrat | Portfolio',
   description: 'A modern portfolio website built with Next.js and Framer Motion',
+  icons: {
+    icon: ['/favicon.ico']
+  }
 };
 
 export default function RootLayout({
