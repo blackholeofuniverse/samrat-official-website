@@ -52,7 +52,7 @@ export function AboutSection() {
             <Card className="p-6 h-full">
               <h3 className="text-xl font-semibold mb-4">Who I Am</h3>
               <p className="text-muted-foreground">
-                I&apos;m a passionate full-stack developer with a keen eye for design and
+                I&apos;m a self-taught full-stack developer with a keen eye for design and
                 a love for creating seamless user experiences. With years of
                 experience in web development, I specialize in building modern,
                 responsive applications that solve real-world problems.
