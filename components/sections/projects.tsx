@@ -18,12 +18,12 @@ const projects = [
     isPublised: true
   },
   {
-    title: "Docs Mini",
-    description: "A collaborative task management application with real-time updates",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/docsmini.png",
-    liveUrl: "https://docssmini.netlify.app/  ",
-    githubUrl: "https://github.com/blackholeofuniverse/Docs",
+    title: "Promptopia",
+    description: "An open-source AI prompting tool for modern world to discover, create and share creative prompts",
+    tags: ["React", "Next.js", "Tailwind CSS", "MongoDB"],
+    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/promptopia.png",
+    liveUrl: "https://promptopia-sam.vercel.app/",
+    githubUrl: "https://github.com/blackholeofuniverse/promptopia-sam",
     isPublised: true
   },
   {
