@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
+    value: "(+91) 9049456439",
     delay: 0.2,
   },
   {
@@ -25,7 +25,7 @@ const contactInfo = [
   {
     icon: Globe,
     label: "Website",
-    value: "www.samrattsx.vercel.com",
+    value: "www.samratfx.vercel.app",
     delay: 0.4,
   },
 ];
