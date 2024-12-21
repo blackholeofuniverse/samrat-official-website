@@ -25,7 +25,7 @@ const contactInfo = [
   {
     icon: Globe,
     label: "Website",
-    value: "www.samratfx.vercel.app",
+    value: "samratfx.vercel.app",
     delay: 0.4,
   },
 ];
