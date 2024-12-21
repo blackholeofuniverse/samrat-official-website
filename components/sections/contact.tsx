@@ -14,6 +14,7 @@ export function ContactSection() {
   });
 
   return (
+    <div className="h-[50rem] max-md:h-full w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]">
     <section id="contact" className="section-padding min-h-screen py-32 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -68,5 +69,6 @@ export function ContactSection() {
         </motion.div>
       </div>
     </section>
+    </div>
   );
 }

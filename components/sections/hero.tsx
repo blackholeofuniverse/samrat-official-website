@@ -8,6 +8,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
+    <div className="h-[50rem] max-md:h-full w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
     <section id="home" className="min-h-screen flex items-center section-padding">
       <div className="container-width flex gap-10 items-center max-md:flex-col">
         <motion.div
@@ -51,5 +52,6 @@ export function HeroSection() {
         <CodeEditor />
       </div>
     </section>
+    </div>
   );
 }

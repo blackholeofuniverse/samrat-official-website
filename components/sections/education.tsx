@@ -33,6 +33,7 @@ export function EducationSection() {
   });
 
   return (
+    <div className="h-[50rem] max-md:h-full w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
     <section id="education" className="section-padding">
       <div className="container-width">
         <motion.div
@@ -84,5 +85,6 @@ export function EducationSection() {
         </motion.div>
       </div>
     </section>
+    </div>
   );
 }
