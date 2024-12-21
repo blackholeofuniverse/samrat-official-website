@@ -13,9 +13,9 @@ export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const unsubscribe = scrollY.onChange(() => setIsScrolled(scrollY.get() > 0));
+    const unsubscribe = scrollY.on("change", () => setIsScrolled(scrollY.get() > 0));
     return () => unsubscribe();
-  }, [scrollY]);
+  }, [scrollY]);  
 
   const menuItems = [
     { href: "#home", label: "Home" },
@@ -36,7 +36,7 @@ export function Navigation() {
     >
       <nav className="container-width px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold flex items-center">
-          <Image src={"logo.svg"} width={50} height={50} alt="logo" />
+          <Image src={"logo.svg"} width={50} height={50} alt="logo" priority />
           Samrat
         </Link>
 
