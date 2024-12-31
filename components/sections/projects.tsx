@@ -9,31 +9,40 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Dice Game",
-    description: "A simple yet interactive dice game with a scoring functionality",
-    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
-    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/dice.png",
-    liveUrl: "https://dice-game-sam.vercel.app/",
-    githubUrl: "https://github.com/blackholeofuniverse/dice-game",
-    isPublised: true
-  },
-  {
     title: "Promptopia",
     description: "An open-source AI prompting tool for modern world to discover, create and share creative prompts",
     tags: ["React", "Next.js", "Tailwind CSS", "MongoDB"],
     image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/promptopia.png",
     liveUrl: "https://promptopia-sam.vercel.app/",
     githubUrl: "https://github.com/blackholeofuniverse/promptopia-sam",
-    isPublised: true
+    isPublished: true
   },
   {
+    title: "Silent Voices",
+    description: "An anonymous messaging platform where users can give and take feedbacks anonymously",
+    tags: ["Next.js", "TypeScript", "React", "MongoDB", "Tailwind CSS", "OpenAi API", "Resend"],
+    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/silentvoices.png",
+    liveUrl: "https://silentvoices.vercel.app",
+    githubUrl: "https://github.com/blackholeofuniverse/silent-voices",
+    isPublished: true
+  },
+  {
+    title: "Dice Game",
+    description: "A simple yet interactive dice game with a scoring functionality",
+    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/dice.png",
+    liveUrl: "https://dice-game-sam.vercel.app/",
+    githubUrl: "https://github.com/blackholeofuniverse/dice-game",
+    isPublished: true
+  },
+  { 
     title: "Trade X",
     description: "A paper trading app to enhance your trading skills",
     tags: ["Flutter"],
     image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/tradex.png",
     liveUrl: "#",
     githubUrl: "#",
-    isPublised: false
+    isPublished: false
   },
 ];
 
@@ -44,7 +53,7 @@ export function ProjectsSection() {
   });
 
   return (
-    <div className="h-[50rem] max-md:h-full w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+    <div className="h-[72rem] max-md:h-full w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
     <section id="projects" className="section-padding">
       <div className="container-width">
         <motion.div
@@ -86,7 +95,7 @@ export function ProjectsSection() {
                         </Badge>
                       ))}
                     </div>
-                    {project.isPublised ? (
+                    {project.isPublished ? (
                       <div className="flex gap-4 relative z-10">
                         <Button
                           variant="outline"
