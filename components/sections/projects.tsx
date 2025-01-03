@@ -39,7 +39,7 @@ const projects = [
     title: "Trade X",
     description: "A paper trading app to enhance your trading skills",
     tags: ["Flutter"],
-    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/tradex.png",
+    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/tradex.jpg",
     liveUrl: "#",
     githubUrl: "#",
     isPublished: false
