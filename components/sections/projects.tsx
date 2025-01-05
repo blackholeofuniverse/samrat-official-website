@@ -53,7 +53,7 @@ export function ProjectsSection() {
   });
 
   return (
-    <div className="h-[72rem] max-md:h-full w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+    <div className="h-[72rem] max-md:h-full w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
     <section id="projects" className="section-padding">
       <div className="container-width">
         <motion.div

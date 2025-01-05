@@ -15,15 +15,16 @@ export function Navigation() {
   useEffect(() => {
     const unsubscribe = scrollY.on("change", () => setIsScrolled(scrollY.get() > 0));
     return () => unsubscribe();
-  }, [scrollY]);  
+  }, [scrollY]);
 
   const menuItems = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#projects", label: "Projects" },
-    { href: "#skills", label: "Skills" },
-    { href: "#education", label: "Education" },
-    { href: "#contact", label: "Contact" },
+    { href: "/", label: "Home" },
+    { href: "/#about", label: "About" },
+    { href: "/#projects", label: "Projects" },
+    { href: "/#skills", label: "Skills" },
+    { href: "/#education", label: "Education" },
+    { href: "/#contact", label: "Contact" },
+    { href: "/blog", label: "Blog" },
   ];
 
   return (
@@ -36,7 +37,7 @@ export function Navigation() {
     >
       <nav className="container-width px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold flex items-center">
-          <Image src={"logo.svg"} width={50} height={50} alt="logo" priority />
+        <Image src="/logo.svg" width={50} height={50} alt="logo" priority />
           Samrat
         </Link>
 

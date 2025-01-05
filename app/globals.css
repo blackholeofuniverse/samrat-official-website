@@ -45,3 +45,27 @@
 .text-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-gray-200 to-gray-400;
 }
+
+.prose {
+  @apply text-gray-300;
+}
+
+.prose h2 {
+  @apply text-white text-2xl font-semibold mt-8 mb-4;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+/* Remove previous code block styling */
+pre {
+  background-color: #111111 !important; /* Light gray background */
+  padding: 1rem;            /* Add padding for better spacing */
+  border-radius: 8px;       /* Optional: Rounded corners */
+  overflow-x: auto;         /* Ensure horizontal scrolling for long lines */
+}
+
+code {
+  background-color: inherit; /* Keep code background same as pre */
+}
