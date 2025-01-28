@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Globe } from "lucide-react";
+import { Mail, MapPin, Globe, Linkedin } from "lucide-react";
 
 const contactInfo = [
   {
@@ -11,9 +11,9 @@ const contactInfo = [
     delay: 0.1,
   },
   {
-    icon: Phone,
-    label: "Phone",
-    value: "(+91) 9049456439",
+    icon: Linkedin,
+    label: "Linkedin",
+    value: "om-bandre-758a4425b",
     delay: 0.2,
   },
   {

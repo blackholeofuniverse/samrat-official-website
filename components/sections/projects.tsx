@@ -8,6 +8,35 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
+  { 
+    title: "TradeQuest",
+    description: "A virtual trading software for Android and Windows that allows users to train themselves using virtual money",
+    tags: ["Flutter"],
+    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/tradequest.jpg",
+    liveUrl: "#",
+    githubUrl: "#",
+    isPublished: false,
+    isLive: true
+  },
+  { 
+    title: "Flixie Bay",
+    description: "Flixie is a smart movie discovery app that helps you find the perfect film based on your mood, preferences, and trending picks.",
+    tags: ["React 19", "Tailwind CSS"],
+    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/flixie.png",
+    liveUrl: "https://flixie-bay.vercel.app/",
+    githubUrl: "https://github.com/blackholeofuniverse/flixie",
+    isPublished: true,
+    isLive: true
+  },
+  { 
+    title: "Youtab Control",
+    description: "A browser extension that automatically pauses YouTube videos when you switch away from the tab.",
+    tags: ["React 19", "Tailwind CSS"],
+    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/youtab.jpg",
+    githubUrl: "https://github.com/blackholeofuniverse/youtab-control-by-samrat",
+    isPublished: true,
+    isLive: false
+  },
   {
     title: "Promptopia",
     description: "An open-source AI prompting tool for modern world to discover, create and share creative prompts",
@@ -15,16 +44,18 @@ const projects = [
     image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/promptopia.png",
     liveUrl: "https://promptopia-sam.vercel.app/",
     githubUrl: "https://github.com/blackholeofuniverse/promptopia-sam",
-    isPublished: true
+    isPublished: true,
+    isLive: true
   },
   {
     title: "Silent Voices",
-    description: "An anonymous messaging platform where users can give and take feedbacks anonymously",
+    description: "An anonymous messaging platform where users can give and take feedbacks.",
     tags: ["Next.js", "TypeScript", "React", "MongoDB", "Tailwind CSS", "OpenAi API", "Resend"],
     image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/silentvoices.png",
     liveUrl: "https://silentvoices.vercel.app",
     githubUrl: "https://github.com/blackholeofuniverse/silent-voices",
-    isPublished: true
+    isPublished: true,
+    isLive: true
   },
   {
     title: "Dice Game",
@@ -33,17 +64,10 @@ const projects = [
     image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/dice.png",
     liveUrl: "https://dice-game-sam.vercel.app/",
     githubUrl: "https://github.com/blackholeofuniverse/dice-game",
-    isPublished: true
+    isPublished: true,
+    isLive: true
   },
-  { 
-    title: "TradeQuest",
-    description: "A paper trading app to enhance your trading skills",
-    tags: ["Flutter"],
-    image: "https://cdn.jsdelivr.net/gh/blackholeofuniverse/cdn/tradequest.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-    isPublished: false
-  },
+  
 ];
 
 export function ProjectsSection() {
@@ -97,6 +121,7 @@ export function ProjectsSection() {
                     </div>
                     {project.isPublished ? (
                       <div className="flex gap-4 relative z-10">
+                        {project.isLive ? (
                         <Button
                           variant="outline"
                           size="sm"
@@ -108,6 +133,8 @@ export function ProjectsSection() {
                             Live Demo
                           </a>
                         </Button>
+
+                        ) : null}
                         <Button
                           variant="outline"
                           size="sm"

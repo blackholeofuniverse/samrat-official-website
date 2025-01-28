@@ -23,7 +23,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Creating Digital Experiences That Matter
+           Creating Digital Experiences That Matter
           </motion.h1>
           <motion.p
             className="text-lg md:text-xl text-muted-foreground mb-8"

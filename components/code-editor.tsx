@@ -69,7 +69,7 @@ export default function CodeEditor() {
             <div className="pl-6">
               <span className="text-white">experience</span>
               <span className="text-code_primary">: </span>
-              <span className="text-[#79c0ff]">2</span>
+              <span className="text-[#79c0ff]">3.5</span>
               <span className="text-white">,</span>
             </div>
 
@@ -90,7 +90,7 @@ export default function CodeEditor() {
               <span className="text-white">.experience </span>
               <span className="text-white">&gt;=</span>
               <span className="text-[#c9d1d9]"> </span>
-              <span className="text-[#79c0ff]">2</span>
+              <span className="text-[#79c0ff]">3.5</span>
               <span className="text-[#c9d1d9]"> </span>
               <span className="text-code_primary">&&</span>
             </div>
